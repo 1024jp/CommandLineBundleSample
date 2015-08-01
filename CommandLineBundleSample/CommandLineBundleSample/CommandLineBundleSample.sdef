@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+
+<dictionary title="Dictionary" xmlns:xi="http://www.w3.org/2003/XInclude">
+    <xi:include href="file:///System/Library/ScriptingDefinitions/CocoaStandard.sdef" xpointer="xpointer(/dictionary/suite)"/>
+    
+    <suite name="CommandLineBundleSample suite" code="cEd1" description="CommandLineBundleSample specific classes.">
+        <enumeration name="saveable file format" code="savf">
+            <enumerator name="Text" code="TXT " description="The plain text.">
+                <cocoa string-value="public.text"/>
+            </enumerator>
+        </enumeration>
+        
+        <class-extension extends="document" description="A CommandLineBundleSample document.">
+            <cocoa class="Document"/>
+            <access-group identifier="com.wolfrosch.CommandLineBundleSample.edit" access="rw"/>
+        </class-extension>
+    </suite>
+</dictionary>

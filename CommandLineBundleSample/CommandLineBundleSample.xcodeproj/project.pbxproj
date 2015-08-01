@@ -14,6 +14,7 @@
 		2A85DCFE1B6C9B0600A9F6E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A85DCFD1B6C9B0600A9F6E1 /* Images.xcassets */; };
 		2A85DD011B6C9B0600A9F6E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A85DCFF1B6C9B0600A9F6E1 /* MainMenu.xib */; };
 		2A85DD0D1B6C9B0600A9F6E1 /* CommandLineBundleSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A85DD0C1B6C9B0600A9F6E1 /* CommandLineBundleSampleTests.m */; };
+		2A85DD2B1B6CA11800A9F6E1 /* CommandLineBundleSample.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2A85DD2A1B6CA11800A9F6E1 /* CommandLineBundleSample.sdef */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		2A85DD0B1B6C9B0600A9F6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A85DD0C1B6C9B0600A9F6E1 /* CommandLineBundleSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandLineBundleSampleTests.m; sourceTree = "<group>"; };
 		2A85DD161B6C9ECB00A9F6E1 /* CommandLineBundleSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CommandLineBundleSample.entitlements; sourceTree = "<group>"; };
+		2A85DD2A1B6CA11800A9F6E1 /* CommandLineBundleSample.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CommandLineBundleSample.sdef; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				2A85DCFD1B6C9B0600A9F6E1 /* Images.xcassets */,
 				2A85DCFA1B6C9B0600A9F6E1 /* Document.xib */,
 				2A85DCFF1B6C9B0600A9F6E1 /* MainMenu.xib */,
+				2A85DD2A1B6CA11800A9F6E1 /* CommandLineBundleSample.sdef */,
 				2A85DCF01B6C9B0600A9F6E1 /* Supporting Files */,
 			);
 			path = CommandLineBundleSample;
@@ -205,9 +208,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A85DCFC1B6C9B0600A9F6E1 /* Document.xib in Resources */,
 				2A85DCFE1B6C9B0600A9F6E1 /* Images.xcassets in Resources */,
+				2A85DCFC1B6C9B0600A9F6E1 /* Document.xib in Resources */,
 				2A85DD011B6C9B0600A9F6E1 /* MainMenu.xib in Resources */,
+				2A85DD2B1B6CA11800A9F6E1 /* CommandLineBundleSample.sdef in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
