@@ -15,6 +15,8 @@
 		2A85DD011B6C9B0600A9F6E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A85DCFF1B6C9B0600A9F6E1 /* MainMenu.xib */; };
 		2A85DD0D1B6C9B0600A9F6E1 /* CommandLineBundleSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A85DD0C1B6C9B0600A9F6E1 /* CommandLineBundleSampleTests.m */; };
 		2A85DD2B1B6CA11800A9F6E1 /* CommandLineBundleSample.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2A85DD2A1B6CA11800A9F6E1 /* CommandLineBundleSample.sdef */; };
+		2A85DD321B6CAC2000A9F6E1 /* bundled_command in Resources */ = {isa = PBXBuildFile; fileRef = 2A85DD311B6CAC2000A9F6E1 /* bundled_command */; };
+		2A85DD341B6CAC3500A9F6E1 /* bundled_command in Copy Executable */ = {isa = PBXBuildFile; fileRef = 2A85DD311B6CAC2000A9F6E1 /* bundled_command */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,20 @@
 			remoteInfo = CommandLineBundleSample;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A85DD301B6CABFA00A9F6E1 /* Copy Executable */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				2A85DD341B6CAC3500A9F6E1 /* bundled_command in Copy Executable */,
+			);
+			name = "Copy Executable";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2A85DCED1B6C9B0600A9F6E1 /* CommandLineBundleSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommandLineBundleSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,16 +59,10 @@
 		2A85DD0C1B6C9B0600A9F6E1 /* CommandLineBundleSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandLineBundleSampleTests.m; sourceTree = "<group>"; };
 		2A85DD161B6C9ECB00A9F6E1 /* CommandLineBundleSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CommandLineBundleSample.entitlements; sourceTree = "<group>"; };
 		2A85DD2A1B6CA11800A9F6E1 /* CommandLineBundleSample.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CommandLineBundleSample.sdef; sourceTree = "<group>"; };
+		2A85DD311B6CAC2000A9F6E1 /* bundled_command */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = bundled_command; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2A85DCEA1B6C9B0600A9F6E1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2A85DD031B6C9B0600A9F6E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,6 +78,7 @@
 			children = (
 				2A85DCEF1B6C9B0600A9F6E1 /* CommandLineBundleSample */,
 				2A85DD091B6C9B0600A9F6E1 /* CommandLineBundleSampleTests */,
+				2A85DD331B6CAC2500A9F6E1 /* Executables */,
 				2A85DCEE1B6C9B0600A9F6E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,6 +135,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2A85DD331B6CAC2500A9F6E1 /* Executables */ = {
+			isa = PBXGroup;
+			children = (
+				2A85DD311B6CAC2000A9F6E1 /* bundled_command */,
+			);
+			name = Executables;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,8 +151,8 @@
 			buildConfigurationList = 2A85DD101B6C9B0600A9F6E1 /* Build configuration list for PBXNativeTarget "CommandLineBundleSample" */;
 			buildPhases = (
 				2A85DCE91B6C9B0600A9F6E1 /* Sources */,
-				2A85DCEA1B6C9B0600A9F6E1 /* Frameworks */,
 				2A85DCEB1B6C9B0600A9F6E1 /* Resources */,
+				2A85DD301B6CABFA00A9F6E1 /* Copy Executable */,
 			);
 			buildRules = (
 			);
@@ -209,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A85DCFE1B6C9B0600A9F6E1 /* Images.xcassets in Resources */,
+				2A85DD321B6CAC2000A9F6E1 /* bundled_command in Resources */,
 				2A85DCFC1B6C9B0600A9F6E1 /* Document.xib in Resources */,
 				2A85DD011B6C9B0600A9F6E1 /* MainMenu.xib in Resources */,
 				2A85DD2B1B6CA11800A9F6E1 /* CommandLineBundleSample.sdef in Resources */,
