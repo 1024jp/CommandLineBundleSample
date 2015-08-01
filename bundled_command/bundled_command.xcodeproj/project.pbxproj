@@ -26,6 +26,8 @@
 		2A85DD201B6CA04A00A9F6E1 /* bundled_command */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bundled_command; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A85DD231B6CA04A00A9F6E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A85DD2C1B6CA64F00A9F6E1 /* CommandLineBundleSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandLineBundleSample.h; sourceTree = "<group>"; };
+		2A85DD2D1B6CAA6700A9F6E1 /* bundled_command.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = bundled_command.entitlements; sourceTree = "<group>"; };
+		2A85DD2E1B6CAA6700A9F6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +62,19 @@
 			children = (
 				2A85DD231B6CA04A00A9F6E1 /* main.m */,
 				2A85DD2C1B6CA64F00A9F6E1 /* CommandLineBundleSample.h */,
+				2A85DD2F1B6CAA6C00A9F6E1 /* Supporting FIles */,
 			);
 			path = bundled_command;
+			sourceTree = "<group>";
+		};
+		2A85DD2F1B6CAA6C00A9F6E1 /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
+				2A85DD2D1B6CAA6700A9F6E1 /* bundled_command.entitlements */,
+				2A85DD2E1B6CAA6700A9F6E1 /* Info.plist */,
+			);
+			name = "Supporting FIles";
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +219,14 @@
 		2A85DD281B6CA04A00A9F6E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = bundled_command.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					Info.plist,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -213,6 +234,14 @@
 		2A85DD291B6CA04A00A9F6E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = bundled_command.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					Info.plist,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
