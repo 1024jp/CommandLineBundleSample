@@ -4,4 +4,7 @@
    <FileRef
       location = "group:CommandLineBundleSample/CommandLineBundleSample.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:bundled_command/bundled_command.xcodeproj">
+   </FileRef>
 </Workspace>
