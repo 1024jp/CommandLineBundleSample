@@ -44,3 +44,18 @@
 }
 
 @end
+
+
+@implementation Document (ScriptingSupport)
+
+- (void)setContent:(NSString *)content
+{
+    self.textView.string = content;
+}
+
+- (NSString *)content
+{
+    return self.textView.string;
+}
+
+@end

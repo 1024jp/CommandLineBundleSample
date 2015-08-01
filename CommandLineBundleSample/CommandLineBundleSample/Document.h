@@ -10,6 +10,13 @@
 
 @interface Document : NSDocument
 
+@end
+
+
+
+@interface Document (ScriptingSupport)
+
+@property (nonatomic, copy) NSString *content;
 
 @end
 
