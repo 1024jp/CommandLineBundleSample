@@ -40,6 +40,7 @@
 		2A85DD061B6C9B0600A9F6E1 /* CommandLineBundleSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandLineBundleSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A85DD0B1B6C9B0600A9F6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A85DD0C1B6C9B0600A9F6E1 /* CommandLineBundleSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandLineBundleSampleTests.m; sourceTree = "<group>"; };
+		2A85DD161B6C9ECB00A9F6E1 /* CommandLineBundleSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CommandLineBundleSample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		2A85DCEF1B6C9B0600A9F6E1 /* CommandLineBundleSample */ = {
 			isa = PBXGroup;
 			children = (
+				2A85DD161B6C9ECB00A9F6E1 /* CommandLineBundleSample.entitlements */,
 				2A85DCF21B6C9B0600A9F6E1 /* AppDelegate.h */,
 				2A85DCF31B6C9B0600A9F6E1 /* AppDelegate.m */,
 				2A85DCF71B6C9B0600A9F6E1 /* Document.h */,
@@ -167,6 +169,11 @@
 				TargetAttributes = {
 					2A85DCEC1B6C9B0600A9F6E1 = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					2A85DD051B6C9B0600A9F6E1 = {
 						CreatedOnToolsVersion = 6.4;
@@ -345,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CommandLineBundleSample/CommandLineBundleSample.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CommandLineBundleSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -356,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CommandLineBundleSample/CommandLineBundleSample.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CommandLineBundleSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
