@@ -25,7 +25,7 @@ int main(int argc, const char * argv[]) {
         // make URL object from argument
         NSURL *url = [[NSURL fileURLWithFileSystemRepresentation:argv[1] isDirectory:NO relativeToURL:nil] URLByStandardizingPath];
         
-        printf("absolute path: %s/n", [url fileSystemRepresentation]);
+        printf("absolute path: %s\n", [url fileSystemRepresentation]);
         
         // create scriptable application object
         CommandLineBundleSampleApplication *application = [SBApplication applicationWithBundleIdentifier:@"com.wolfrosch.CommandLineBundleSample"];
