@@ -59,7 +59,7 @@
 		2A85DD0C1B6C9B0600A9F6E1 /* CommandLineBundleSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandLineBundleSampleTests.m; sourceTree = "<group>"; };
 		2A85DD161B6C9ECB00A9F6E1 /* CommandLineBundleSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CommandLineBundleSample.entitlements; sourceTree = "<group>"; };
 		2A85DD2A1B6CA11800A9F6E1 /* CommandLineBundleSample.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CommandLineBundleSample.sdef; sourceTree = "<group>"; };
-		2A85DD311B6CAC2000A9F6E1 /* bundled_command */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = bundled_command; sourceTree = "<group>"; };
+		2A85DD311B6CAC2000A9F6E1 /* bundled_command */ = {isa = PBXFileReference; lastKnownFileType = text; path = bundled_command; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
